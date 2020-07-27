@@ -1,5 +1,7 @@
 package reto3
 
+import reto3.model.*
+
 fun main(args: Array<String>) {
     println("hola mundo")
     recipest()
@@ -75,7 +77,7 @@ fun makeRecipet() {
                 println("Cantidad : ")
                 val cantidad: String = readLine() ?: "0"
 
-                Lacteos(id.toInt(),name!! ,descripcion!!, cantidad.toInt())
+                Lacteos(id.toInt(), name!!, descripcion!!, cantidad.toInt())
             }
 
             "3" -> {
@@ -90,7 +92,7 @@ fun makeRecipet() {
                 println("Cantidad Kilos : ")
                 val cantidad: String = readLine() ?: "0"
 
-                Carnes(idc.toInt(),namec!! ,descripcionc!!, cantidad.toInt())
+                Carnes(idc.toInt(), namec!!, descripcionc!!, cantidad.toInt())
             }
 
             "4" -> {
@@ -104,7 +106,7 @@ fun makeRecipet() {
                 println("Cantidad : ")
                 val cantidad: String = readLine() ?: "0"
 
-                Verduras(id.toInt(),name!! ,descripcion!!, cantidad.toInt())
+                Verduras(id.toInt(), name!!, descripcion!!, cantidad.toInt())
             }
             "5" -> {
                 println("------Frutas-------")
@@ -117,7 +119,7 @@ fun makeRecipet() {
                 println("Cantidad : ")
                 val cantidad: String = readLine() ?: "0"
 
-                Frutas(id.toInt(),name!! ,descripcion!!, cantidad.toInt())
+                Frutas(id.toInt(), name!!, descripcion!!, cantidad.toInt())
             }
             "6" -> {
                 println("------Cereal-------")
@@ -130,7 +132,7 @@ fun makeRecipet() {
                 println("Cantidad : ")
                 val cantidad: String = readLine() ?: "0"
 
-                Granos(id.toInt(),name!! ,descripcion!!, cantidad.toInt())
+                Granos(id.toInt(), name!!, descripcion!!, cantidad.toInt())
             }
             "7" -> {
                 println("------Huevos-------")
@@ -143,7 +145,7 @@ fun makeRecipet() {
                 println("Cantidad : ")
                 val cantidad: String = readLine() ?: "0"
 
-                Lacteos(id.toInt(),name!! ,descripcion!!, cantidad.toInt())
+                Lacteos(id.toInt(), name!!, descripcion!!, cantidad.toInt())
             }
             "8" -> {
                 println("------Verduras-------")
@@ -156,16 +158,13 @@ fun makeRecipet() {
                 println("Cantidad : ")
                 val cantidad: String = readLine() ?: "0"
 
-                Aceite(cantidad.toInt(), cantidad.toInt(),name!! ,descripcion!!)
+                Aceite(cantidad.toInt(), cantidad.toInt(), name!!, descripcion!!)
 
             }
             "9"-> println("Gracias por elegirnos")
         }
 
     }while (rescategoria!="9")
-
-
-
 
 }
 

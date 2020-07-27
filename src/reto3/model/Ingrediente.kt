@@ -1,4 +1,4 @@
-package reto3
+package reto3.model
 
 abstract class Ingrediente(var id: Int, var nombre:String, var descripcion : String) {
 

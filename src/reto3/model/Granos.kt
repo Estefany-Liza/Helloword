@@ -1,4 +1,4 @@
-package reto3
+package reto3.model
 
 class Granos(id: Int, nombre: String, descripcion: String, var cantidad: Int) :
         Ingrediente(id, nombre, descripcion), ICrudA {

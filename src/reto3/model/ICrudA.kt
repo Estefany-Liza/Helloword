@@ -1,4 +1,4 @@
-package reto3
+package reto3.model
 
 interface ICrudA {
     fun create(): String

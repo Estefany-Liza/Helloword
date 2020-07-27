@@ -1,8 +1,8 @@
-package reto3
+package reto3.model
 
 
 class Aceite( var cantidad:Int, id: Int, nombre: String, descripcion: String):
-        Ingrediente(id, nombre, descripcion) , ICrudA{
+        Ingrediente(id, nombre, descripcion) , ICrudA {
 
     var listAceite : ArrayList<Aceite>? = null
 
